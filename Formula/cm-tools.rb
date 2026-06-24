@@ -1,5 +1,5 @@
 class CmTools < Formula
-  desc "Internal CLI tool for Commutatus — syncs Windsurf rules, skills, and workflows"
+  desc "Internal CLI tool for Commutatus — syncs AI workflow rules, skills, and workflows"
   homepage "https://github.com/commutatus/cm-tools"
   version "0.1.10"
 
