@@ -1,20 +1,20 @@
 class CmTools < Formula
   desc "Internal CLI tool for Commutatus — syncs AI workflow rules, skills, and workflows"
   homepage "https://github.com/commutatus/cm-tools"
-  version "1.1.0"
+  version "1.2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.1.0/cm-tools_darwin_arm64.tar.gz"
-    sha256 "5782615296efff3f07433c882e69eb99dac5cda2c4c5d95e0119f52988a583dc"
+    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.2.0/cm-tools_darwin_arm64.tar.gz"
+    sha256 "5fcaa2c681300a12ca8229311d46cb958f6e2b32bd97dc39b0ead3dd2f641057"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.1.0/cm-tools_darwin_amd64.tar.gz"
-    sha256 "c3f8743e763678c0f3a04e156ecf87a3b25327ddd8ccc240eba6a5185c77209b"
+    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.2.0/cm-tools_darwin_amd64.tar.gz"
+    sha256 "021686e5692f19900a2dbde83851c7efa1cbb02a1f2ca1f667161047de1a48c2"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.1.0/cm-tools_linux_arm64.tar.gz"
-    sha256 "b7330962905f165125ff3fd3fcb50ece24edeb15e5b10191f7b59b695ad2c59d"
+    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.2.0/cm-tools_linux_arm64.tar.gz"
+    sha256 "e1e904370b279c392c840b76cd9969825f85479a2104316e8447fe3b3b1dd076"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.1.0/cm-tools_linux_amd64.tar.gz"
-    sha256 "db2127b2a8a5e1161928a59c941256855ff7308144a7e5d2f631215edf8d07ee"
+    url "https://github.com/commutatus/homebrew-tools/releases/download/cm-tools-v1.2.0/cm-tools_linux_amd64.tar.gz"
+    sha256 "851fa00d6fa12f94c1015834aa60349741c8d79bc08b725f9525a9290eea2f89"
   end
 
   def install
